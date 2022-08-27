@@ -1,0 +1,51 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:  #000;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.wrapper {
+    height: 100px;
+    width: 360px;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 10px;
+    position: relative;
+    animation: animate 1.5s linear infinite;
+}
+
+#MyClockDisplay {
+    background: #000;
+    z-index: -1;
+}
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 80px;
+    padding: 0px 5px;
+    /* background: #000!important; */
+    width: 350px;
+    height: 90px;
+    text-align: center;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    z-index: 665!important;
+}
+
+@keyframes animate {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
