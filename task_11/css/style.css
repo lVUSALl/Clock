@@ -21,7 +21,7 @@ body {
 }
 
 #time .circle {
-    position: relative;
+    position: relative!important;
     width: 150px;
     height: 150px;
     display: flex;
@@ -79,8 +79,8 @@ body {
 .dots::before {
     content: '';
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 15px!important;
+    height: 15px!important;
     background: var(--clr) ;
     border-radius: 50%;
     top: -3px;
